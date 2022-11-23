@@ -30,11 +30,13 @@ team_goal_2014 = team_goal_2014['goals'].sort_values(ascending=False)
 
 print(team_goal_2014)
 
+# 1
 fig, ax = plt.subplots()
 ax.bar(team_goal_2014.index,team_goal_2014.values)
 plt.xticks(rotation = 90)
 plt.tight_layout()
 plt.show()
 
+# 2
 team_goal_2014.plot(x=team_goal_2014.index, y=team_goal_2014.values, kind="bar", figsize=(12, 12), fontsize=14)
 plt.show()
